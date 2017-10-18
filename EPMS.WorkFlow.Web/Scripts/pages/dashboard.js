@@ -10,7 +10,7 @@ $(function () {
   'use strict';
 
   // Make the dashboard widgets sortable Using jquery UI
-  $('.connectedSortable').sortable({
+ /* $('.connectedSortable').sortable({
     placeholder         : 'sort-highlight',
     connectWith         : '.connectedSortable',
     handle              : '.box-header, .nav-tabs',
@@ -25,7 +25,7 @@ $(function () {
     handle              : '.handle',
     forcePlaceholderSize: true,
     zIndex              : 999999
-  });
+  });*/
 
   // bootstrap WYSIHTML5 - text editor
   $('.textarea').wysihtml5();
@@ -126,7 +126,7 @@ $(function () {
 
   /* Morris.js Charts */
   // Sales chart
-  var area = new Morris.Area({
+ /* var area = new Morris.Area({
     element   : 'revenue-chart',
     resize    : true,
     data      : [

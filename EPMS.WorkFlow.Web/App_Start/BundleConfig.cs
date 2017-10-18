@@ -21,12 +21,32 @@ namespace EPMS.WorkFlow.Web
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/moment.min.js",
+                      "~/Scripts/bootstrap-datepicker/js/bootstrap-datepicker.min.js",
+                      "~/Scripts/bootstrap-colorpicker.min.js",
+                      "~/Scripts/daterangepicker.js",
+                      "~/Scripts/raphael.min.js",
+                      "~/Scripts/morris.min.js",
+                      "~/Scripts/jquery.sparkline.min.js",
+                      "~/Scripts/jquery.knob.min.js",
+                      "~/Scripts/jquery-jvectormap-1.2.2.min.js",
+                      "~/Scripts/jquery-jvectormap-world-mill-en.js",
+                      "~/Scripts/jquery.slimscroll.min.js",
+                      "~/Scripts/bootstrap3-wysihtml5.all.min.js",
+                      "~/Scripts/adminlte.min.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
+                      "~/Content/bootstrap-datepicker/bootstrap-datepicker.min.css",
+                      "~/Content/bootstrap-colorpicker/bootstrap-colorpicker.min.css",
+                       "~/Content/bootstrap-daterangepicker/daterangepicker.css",
+                       "~/Content/jquery-jvectormap.css",
+                       "~/Content/morris.css",
+                      "~/Content/bootstrap3-wysihtml5.min.css",
                       "~/Content/font-awesome/css/font-awesome.min.css",
                       "~/Content/css/AdminLTE.min.css",
+                      "~/Content/css/skins/_all-skins.min.css",
                       "~/Content/font-awesome/css/font-awesome.min.css",
                       "~/Content/Ionicons/css/ionicons.min.css"
                       ));
