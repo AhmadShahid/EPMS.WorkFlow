@@ -77,6 +77,6 @@ c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFl
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Microsoft.Owin.Security.Google.xml
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\obj\Debug\EPMS.WorkFlow.Web.csprojResolveAssemblyReference.cache
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\obj\Debug\EPMS.WorkFlow.Web.dll
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\obj\Debug\EPMS.WorkFlow.Web.pdb
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\obj\Debug\EPMS.WorkFlow.Web.csprojResolveAssemblyReference.cache
