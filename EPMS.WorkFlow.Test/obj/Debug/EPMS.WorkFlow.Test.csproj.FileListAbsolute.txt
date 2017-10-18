@@ -1,0 +1,7 @@
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Test\bin\Debug\EPMS.WorkFlow.Test.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Test\bin\Debug\EPMS.WorkFlow.Test.pdb
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Test\obj\Debug\EPMS.WorkFlow.Test.csprojResolveAssemblyReference.cache
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Test\obj\Debug\EPMS.WorkFlow.Test.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Test\obj\Debug\EPMS.WorkFlow.Test.pdb
