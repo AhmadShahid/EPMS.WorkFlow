@@ -3,3 +3,10 @@ c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFl
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\obj\Debug\EPMS.WorkFlow.Infrastructure.csprojResolveAssemblyReference.cache
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\obj\Debug\EPMS.WorkFlow.Infrastructure.dll
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\obj\Debug\EPMS.WorkFlow.Infrastructure.pdb
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\bin\Debug\EPMS.WorkFlow.Infrastructure.dll.config
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\bin\Debug\EntityFramework.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\bin\Debug\EntityFramework.xml
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\bin\Debug\EPMS.WorkFlow.Core.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Infrastructure\bin\Debug\EPMS.WorkFlow.Core.pdb

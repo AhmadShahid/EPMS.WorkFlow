@@ -80,3 +80,11 @@ c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFl
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\obj\Debug\EPMS.WorkFlow.Web.dll
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\obj\Debug\EPMS.WorkFlow.Web.pdb
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\obj\Debug\EPMS.WorkFlow.Web.csprojResolveAssemblyReference.cache
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\EPMS.WorkFlow.Core.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\EPMS.WorkFlow.Infrastructure.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Unity.Abstractions.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Unity.Container.dll
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\EPMS.WorkFlow.Core.pdb
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\EPMS.WorkFlow.Infrastructure.pdb
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Unity.Abstractions.pdb
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Unity.Container.pdb

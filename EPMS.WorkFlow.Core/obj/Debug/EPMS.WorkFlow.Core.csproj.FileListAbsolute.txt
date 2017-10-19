@@ -2,3 +2,4 @@ c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFl
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EPMS.WorkFlow.Core.pdb
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.dll
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.pdb
+c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.csprojResolveAssemblyReference.cache
