@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPMS.WorkFlow.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -14,6 +15,10 @@ namespace EPMS.WorkFlow.Infrastructure.Context
         {
 
         }
+
+        public DbSet<MaintenanceRequest> MaintenanceRequests { get; set; }
+
+        public DbSet<MaintenanceWorklist> MaintenanceWorklists { get; set; }
 
     }
 }

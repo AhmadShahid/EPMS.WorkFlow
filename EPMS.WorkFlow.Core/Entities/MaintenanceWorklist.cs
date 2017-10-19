@@ -10,21 +10,24 @@ namespace EPMS.WorkFlow.Core.Entities
     public class MaintenanceWorklist
     {
         [Required]
-        public string ID { get; set; }
+        public int Id { get; set; }
 
-        public long Priorty { get; set; }
+        //Foreign key for Standard
+        public int MaintenanceRequestId { get; set; }
 
-        public long Status { get; set; }
+        public MaintenanceRequest MaintenanceRequest { get; set; }
         public DateTime? AssignDate { get; set; }
         public DateTime? ExpirationDate { get; set; }
         public DateTime? DueDate { get; set; }
-
         public DateTime CreatedOn { get; set; }
 
         public long UserId { get; set; }
 
         public  bool IsCompleted { get; set; }
         public DateTime? CompletedOn { get; set; }
+        public long Priorty { get; set; }
+
+        public long Status { get; set; }
 
     }
 }

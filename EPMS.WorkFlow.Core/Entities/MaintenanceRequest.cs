@@ -10,14 +10,13 @@ namespace EPMS.WorkFlow.Core.Entities
     public class MaintenanceRequest
     {
         [Required]
-        public string ID { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        [MaxLength(50)]
-        public string CustomerNo{ get; set; }
+        public long CustomerNo{ get; set; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(100)]
         public string CustomerName { get; set; }
 
         [Required]
@@ -30,12 +29,12 @@ namespace EPMS.WorkFlow.Core.Entities
         public string Email { get; set; }
 
         [Required]
-        public long RequestBy{ get; set; }
+        public int RequestBy{ get; set; }
 
         [Required]
-        public long RequestType { get; set; }
+        public int RequestType { get; set; }
 
-        public  DateTime CreatedOn { get; set; }
+        public DateTime CreatedOn { get; set; }
 
 
     }
