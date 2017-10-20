@@ -88,3 +88,5 @@ c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFl
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\EPMS.WorkFlow.Infrastructure.pdb
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Unity.Abstractions.pdb
 c:\users\s.ahmad\documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\Unity.Container.pdb
+C:\Users\s.ahmad\Documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\AutoMapper.dll
+C:\Users\s.ahmad\Documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Web\bin\AutoMapper.xml

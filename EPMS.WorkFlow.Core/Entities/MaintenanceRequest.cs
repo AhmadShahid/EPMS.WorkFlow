@@ -13,26 +13,26 @@ namespace EPMS.WorkFlow.Core.Entities
         public int Id { get; set; }
 
         [Required]
-        public long CustomerNo{ get; set; }
-
-        [Required]
         [MaxLength(100)]
         public string CustomerName { get; set; }
 
         [Required]
         public string ContactNo { get; set; }
 
-
+        [Required]
+        [MaxLength(100)]
         public string Adress { get; set; }
 
         [Required]
+        [MaxLength(250)]
         public string Email { get; set; }
 
         [Required]
         public int RequestBy{ get; set; }
 
         [Required]
-        public int RequestType { get; set; }
+        [MaxLength(500)]
+        public string RequestReason { get; set; }
 
         public DateTime CreatedOn { get; set; }
 

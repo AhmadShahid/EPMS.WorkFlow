@@ -85,10 +85,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\WorkFlowContext.cs" />
-    <Compile Include="Identity\IdentityConfig.cs" />
-    <Compile Include="Identity\IdentityModels.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Constant\EPMS_Constant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Repository.cs" />
   </ItemGroup>

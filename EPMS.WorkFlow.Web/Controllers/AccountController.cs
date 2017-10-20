@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using EPMS.WorkFlow.Web.Models;
+using EPMS.WorkFlow.Core.Identity;
 
 namespace EPMS.WorkFlow.Web.Controllers
 {
@@ -387,8 +388,6 @@ namespace EPMS.WorkFlow.Web.Controllers
 
         //
         // POST: /Account/LogOff
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);

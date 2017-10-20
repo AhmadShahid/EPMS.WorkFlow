@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -27,29 +28,10 @@
                     <span class="sr-only">Toggle navigation</span>
                 </a>
                 <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-                        
 
+                    <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
 
-                        <!-- User Account: style can be found in dropdown.less -->
-                        <li class="dropdown user user-menu">
-                            <ul class="dropdown-menu">
-  
-
-                                <li class="user-footer">
-                                    <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Control Sidebar Toggle Button -->
-                        <li>
-                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                        </li>
+                        <li> @Html.ActionLink("LogOff", "LogOff", "Account", routeValues: null, htmlAttributes: new { title = "Logout" })</li>
                     </ul>
                 </div>
             </nav>
@@ -59,24 +41,48 @@
         <aside class="main-sidebar">
             <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
+                @if (Request.IsAuthenticated)
+                {
+                <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src='@Url.Content("~/Content/img/avatar04.png")' class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+                            <p> @User.Identity.GetUserName() </p>
 
+                        </div>
+                    </div>
+                }
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">MAIN NAVIGATION</li>
 
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-files-o"></i>
-                            <span>Layout Options</span>
+                            <i class="fa fa-share"></i> 
+                            <span>Requests</span>
                             <span class="pull-right-container">
-                                <span class="label label-primary pull-right">4</span>
+                                <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                            <li><a href='@Url.Action("Index","MaintenanceRequest")'><i class="fa fa-circle-o"></i> Request </a></li>
+                            <li><a href='@Url.Action("Create","MaintenanceRequest")'><i class="fa fa-circle-o"></i> Add New Request </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-share"></i> 
+                            <span>Worklist</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Worklist</a></li>
+                            <li><a href='@Url.Action("Create","MaintenanceRequest")'><i class="fa fa-circle-o"></i>  Add New Worklist</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -96,8 +102,9 @@
             <strong>Copyright &copy; 2014-2016 <a href="#">EMPS WorkFlow</a>.</strong> All rights
             reserved.
         </footer>
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

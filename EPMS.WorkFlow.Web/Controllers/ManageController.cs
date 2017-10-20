@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using EPMS.WorkFlow.Web.Models;
+using EPMS.WorkFlow.Core.Identity;
 
 namespace EPMS.WorkFlow.Web.Controllers
 {

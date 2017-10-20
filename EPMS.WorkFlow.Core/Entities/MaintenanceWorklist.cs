@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPMS.WorkFlow.Core.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace EPMS.WorkFlow.Core.Entities
         public DateTime CreatedOn { get; set; }
 
         public long UserId { get; set; }
+
+        public ApplicationUser User { get; set; }
 
         public  bool IsCompleted { get; set; }
         public DateTime? CompletedOn { get; set; }

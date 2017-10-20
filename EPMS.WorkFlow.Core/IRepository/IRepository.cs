@@ -11,10 +11,18 @@ namespace EPMS.WorkFlow.Core.IRepository
 {
     public interface IRepository<T>
     {
-        T Get(long id);
+        T Find(long id);
+        IList<T> FindBy(Expression<Func<T, bool>> predicate);
         IList<T> GetAll();
         PagedList<T> GetPaged(Expression<Func<T, bool>> expression, PagingInfo pagingInfo);
 
-        bool Delete(params T[] data);
+        void Remove(T entity);
+
+        void RemoveById(long Id);
+
+        void Add(T entity);
+        void Edit(T entity);
+
+        void Save();
     }
 }
