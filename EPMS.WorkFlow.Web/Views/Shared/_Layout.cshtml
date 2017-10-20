@@ -9,6 +9,13 @@
     @Scripts.Render("~/bundles/modernizr")
 
     @RenderSection("styles", required: false)
+    <style>
+        .action-icon {
+            display: inline-block;
+            padding: 0 5px;
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -60,7 +67,7 @@
 
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-share"></i> 
+                            <i class="fa fa-share"></i>
                             <span>Requests</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -74,7 +81,7 @@
 
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-share"></i> 
+                            <i class="fa fa-share"></i>
                             <span>Worklist</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
