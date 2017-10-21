@@ -6,10 +6,10 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="col-xs-11">
+            <div class="col-xs-10">
 
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-2">
                 <a class="btn btn-app" title="Add Request" href='@Url.Action("Create","MaintenanceRequest")'>
                     <i class="fa fa-plus"></i> Add
                 </a>
@@ -49,6 +49,14 @@
 
     @Scripts.Render("~/Scripts/pages/dashboard.js")
     <script>
+
+        var rowAction = function (action, id) {
+
+            if (action === 'edit') {
+                window.location.href = "MaintenanceRequest/Edit/" + id;
+            }
+            console.log(id);
+        }
         /* $('#example2').DataTable({
              'paging': true,
              'lengthChange': false,
@@ -69,18 +77,18 @@
                 "datatype": "json"
             },
             "columns": [
-            { "data": "Name", "name": "Name", "autoWidth": true },
-            { "data": "Email", "name": "Email", "autoWidth": true },
-            { "data": "ContactNo", "name": "Contact No", "autoWidth": true },
-            { "data": "RequestBy", "name": "RequestBy", "autoWidth": true },
-            {
-                "data": null, render: function (data, type, row) {
-                    var html = '<a  class="glyphicon glyphicon-pencil action-icon" aria-hidden="true"></span>';
-                    html += '<a class="glyphicon glyphicon-remove action-icon"></span>';
-                    html += '<a class="glyphicon glyphicon-chevron-right action-icon"></span>';
-                    return html;
+                { "data": "Name", "name": "Name", "autoWidth": true },
+                { "data": "Email", "name": "Email", "autoWidth": true },
+                { "data": "ContactNo", "name": "Contact No", "autoWidth": true },
+                { "data": "RequestBy", "name": "RequestBy", "autoWidth": true },
+                {
+                    "data": null, render: function (data, type, row) {
+                        var html = '<a  class="glyphicon glyphicon-pencil action-icon" aria-hidden="true" onclick="rowAction(\'edit\',' + row.Id + ')"></span>';
+                        html += '<a class="glyphicon glyphicon-remove action-icon"></span>';
+                        html += '<a class="glyphicon glyphicon-chevron-right action-icon"></span>';
+                        return html;
+                    }
                 }
-            }
             ],
             "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
         });

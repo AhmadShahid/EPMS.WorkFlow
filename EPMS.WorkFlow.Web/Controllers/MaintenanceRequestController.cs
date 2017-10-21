@@ -38,7 +38,7 @@ namespace EPMS.WorkFlow.Web.Controllers
             var length = Request.QueryString["length"] != null ? Convert.ToInt32(Request.QueryString["length"]) : 10; 
             IList<MaintenanceRequest> requests = maintenanceRequestRepository.GetAll();
 
-            var targetRequest = requests.Select(x => new MaintenanceListVM { Name = x.CustomerName, Email = x.Email, ContactNo = x.ContactNo, RequestBy = EPMS_Constants.RequestSource[x.RequestBy] != null ? EPMS_Constants.RequestSource[x.RequestBy] : null }).ToList();
+            var targetRequest = requests.Select(x => new MaintenanceListVM { Id = x.Id,Name = x.CustomerName, Email = x.Email, ContactNo = x.ContactNo, RequestBy = EPMS_Constants.RequestSource[x.RequestBy] != null ? EPMS_Constants.RequestSource[x.RequestBy] : null }).ToList();
             var pagesResult = new PagedList<MaintenanceListVM>(targetRequest, start, length, targetRequest.Count());
             return Json(pagesResult, JsonRequestBehavior.AllowGet);
         }
@@ -84,16 +84,44 @@ namespace EPMS.WorkFlow.Web.Controllers
         // GET: MaintenanceRequest/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            MaintenanceRequest model = maintenanceRequestRepository.Find(id);
+
+            MaintenanceRequestVM vm = new MaintenanceRequestVM
+            {
+                CustomerName = model.CustomerName,
+                Email = model.Email,
+                Adress = model.Adress,
+                RequestReason = model.RequestReason,
+                RequestBy = model.RequestBy,
+                ContactNo = model.ContactNo,
+            };
+
+            return View(vm);
         }
 
         // POST: MaintenanceRequest/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(MaintenanceRequest vm)
         {
             try
             {
-                // TODO: Add update logic here
+                if (!ModelState.IsValid)
+                {
+                    return View(vm);
+                }
+
+                MaintenanceRequest maintenanceRequest = new MaintenanceRequest
+                {
+                    Id = vm.Id,
+                    CustomerName = vm.CustomerName,
+                    Email = vm.Email,
+                    Adress = vm.Adress,
+                    RequestReason = vm.RequestReason,
+                    RequestBy = vm.RequestBy,
+                    ContactNo = vm.ContactNo,
+                };
+                maintenanceRequestRepository.Edit(maintenanceRequest);
+                maintenanceRequestRepository.Save();
 
                 return RedirectToAction("Index");
             }
@@ -103,19 +131,17 @@ namespace EPMS.WorkFlow.Web.Controllers
             }
         }
 
-        // GET: MaintenanceRequest/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+
 
         // POST: MaintenanceRequest/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id)
         {
             try
             {
-                // TODO: Add delete logic here
+                MaintenanceRequest model = maintenanceRequestRepository.Find(id);
+                maintenanceRequestRepository.Remove(model);
+                maintenanceRequestRepository.Save();
 
                 return RedirectToAction("Index");
             }

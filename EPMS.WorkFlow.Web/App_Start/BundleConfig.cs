@@ -31,6 +31,7 @@ namespace EPMS.WorkFlow.Web
                        "~/Scripts/datatables.net-bs/dataTables.bootstrap.min.js",
                       "~/Scripts/jquery.sparkline.min.js",
                       "~/Scripts/jquery.knob.min.js",
+                      "~/Scripts/Chart.min.js",
                       "~/Scripts/jquery-jvectormap-1.2.2.min.js",
                       "~/Scripts/jquery-jvectormap-world-mill-en.js",
                       "~/Scripts/jquery.slimscroll.min.js",

@@ -3,7 +3,7 @@ namespace EPMS.WorkFlow.Core.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class EPMS_Workflow : DbMigration
     {
         public override void Up()
         {

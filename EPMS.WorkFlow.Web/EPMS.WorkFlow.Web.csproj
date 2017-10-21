@@ -218,8 +218,10 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\Dashboard\DashboardViewModel.cs" />
     <Compile Include="ViewModels\MaintenanceRequest\MaintenanceListVM.cs" />
     <Compile Include="ViewModels\MaintenanceRequest\MaintenanceRequestVM.cs" />
+    <Compile Include="ViewModels\MaintenanceWorklist\MaintenanceWorklistListViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -278,10 +280,10 @@
     <Content Include="Views\MaintenanceRequest\Index.cshtml" />
     <Content Include="Views\MaintenanceRequest\Create.cshtml" />
     <Content Include="Views\MaintenanceRequest\Edit.cshtml" />
+    <Content Include="Views\MaintenanceWorklist\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\MaintenanceWorklist\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

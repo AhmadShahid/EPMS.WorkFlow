@@ -8,6 +8,7 @@ using EPMS.WorkFlow.Core.Common.Paging;
 using EPMS.WorkFlow.Core.Common.Paging.SSI.Framework.Common.Paging;
 using System.Linq.Expressions;
 using EPMS.WorkFlow.Core.Context;
+using System.Data.SqlClient;
 
 namespace EPMS.WorkFlow.Infrastructure.Repository
 {
@@ -26,7 +27,7 @@ namespace EPMS.WorkFlow.Infrastructure.Repository
 
         public void Edit(T entity)
         {
-            throw new NotImplementedException();
+            this.context.Entry<T>(entity).State = System.Data.Entity.EntityState.Modified;
         }
 
         public T Find(long id)

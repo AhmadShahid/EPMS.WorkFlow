@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-10">
+
+            </div>
+            <div class="col-xs-2">
+                <a class="btn btn-app" title="Add Request" href='@Url.Action("Create","MaintenanceRequest")'>
+                    <i class="fa fa-plus"></i> Add
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Worklist</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example2" class="table table-striped table-bordered" cellspacing="0" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Expired On </th>
+                                <th>Status</th>
+                                <th>Is Completed</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+
+
+@section Scripts {
+
+    @Scripts.Render("~/Scripts/pages/dashboard.js")
+    <script>
+
+        var rowAction = function (action, id) {
+
+            if (action === 'edit') {
+                window.location.href = "MaintenanceRequest/Edit/" + id;
+            }
+            console.log(id);
+        }
+        /* $('#example2').DataTable({
+             'paging': true,
+             'lengthChange': false,
+             'searching': false,
+             'ordering': true,
+             'info': true,
+             'autoWidth': false
+         })
+         */
+        $('#example2').DataTable({
+            "processing": true, // for show progress bar
+            "serverSide": true, // for process server side
+            "filter": false, // this is for disable filter (search box)
+            "orderMulti": false, // for disable multiple column at once
+            "ajax": {
+                "url": "/MaintenanceWorklist/List",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "Name", "name": "Name", "autoWidth": true },
+                { "data": "ExpiryDate", "name": "Expiry Date", "autoWidth": true },
+                { "data": "Status", "name": "Status", "autoWidth": true },
+                { "data": "IsCompleted", "name": "Is Completed", "autoWidth": true },
+                {
+                    "data": null, render: function (data, type, row) {
+                        var html = '<a  class="glyphicon glyphicon-pencil action-icon" aria-hidden="true" onclick="rowAction(\'edit\',' + row.Id + ')"></span>';
+                        html += '<a class="glyphicon glyphicon-remove action-icon"></span>';
+                        html += '<a class="glyphicon glyphicon-chevron-right action-icon"></span>';
+                        return html;
+                    }
+                }
+            ],
+            "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+        });
+    </script>
+}

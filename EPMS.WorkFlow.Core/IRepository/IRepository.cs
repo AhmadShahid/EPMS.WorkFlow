@@ -6,6 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace EPMS.WorkFlow.Core.IRepository
 {
@@ -20,9 +21,12 @@ namespace EPMS.WorkFlow.Core.IRepository
 
         void RemoveById(long Id);
 
+
         void Add(T entity);
         void Edit(T entity);
 
         void Save();
+
+     
     }
 }

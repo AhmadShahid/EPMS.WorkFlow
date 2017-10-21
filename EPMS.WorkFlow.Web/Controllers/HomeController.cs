@@ -3,14 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using EPMS.WorkFlow.Core.Context;
+using EPMS.WorkFlow.Core.Entities;
+using EPMS.WorkFlow.Core.IRepository;
+using EPMS.WorkFlow.Infrastructure.Dtos;
+using EPMS.WorkFlow.Infrastructure.Repository;
+using EPMS.WorkFlow.Web.ViewModels.Dashboard;
 
 namespace EPMS.WorkFlow.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private IRepository<MaintenanceRequest> maintenanceRequestRepository;
+        private IExecStoreProcedure storeProcedure;
+
+        public HomeController()
+        {
+            maintenanceRequestRepository = new Repository<MaintenanceRequest>(new WorkFlowContext());
+            storeProcedure = new ExecStoreProcedure(new WorkFlowContext());
+        }
         public ActionResult Index()
         {
-            return View();
+            DashboardViewModel vm = new DashboardViewModel();
+            var tilesInfo = storeProcedure.ExecTilesStoredProcedure<TileInfo>(1);
+            var request = tilesInfo.Where(x => x.title == "Requests").FirstOrDefault();
+            var worklist = tilesInfo.Where(x => x.title == "Worklists").FirstOrDefault();
+            var assignment = tilesInfo.Where(x => x.title == "Assignments").FirstOrDefault();
+            vm.WorklistChartInfo = storeProcedure.ExecWorklistStoredProcedure<WorklistChartInfo>(1);
+            vm.Request = request;
+            vm.Worklist = worklist;
+            vm.Assignment = assignment;
+            return View(vm);
         }
 
         public JsonResult CustomerList()

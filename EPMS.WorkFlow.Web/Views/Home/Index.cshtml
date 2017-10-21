@@ -1,4 +1,5 @@
-﻿@{
+﻿@model EPMS.WorkFlow.Web.ViewModels.Dashboard.DashboardViewModel
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -315,92 +316,92 @@
 
 <section class="content">
     <!-- Small boxes (Stat box) -->
-    <div class="row">
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-aqua">
-                <div class="inner">
-                    <h3>150</h3>
-                    <p>New Orders</p>
+    @*<div class="row">
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-aqua">
+                    <div class="inner">
+                        <h3>150</h3>
+                        <p>New Orders</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="icon">
-                    <i class="ion ion-bag"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-green">
-                <div class="inner">
-                    <h3>53<sup style="font-size: 20px">%</sup></h3>
-                    <p>Bounce Rate</p>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-green">
+                    <div class="inner">
+                        <h3>53<sup style="font-size: 20px">%</sup></h3>
+                        <p>Bounce Rate</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-stats-bars"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="icon">
-                    <i class="ion ion-stats-bars"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-yellow">
-                <div class="inner">
-                    <h3>44</h3>
-                    <p>User Registrations</p>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-yellow">
+                    <div class="inner">
+                        <h3>44</h3>
+                        <p>User Registrations</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-person-add"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="icon">
-                    <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-red">
-                <div class="inner">
-                    <h3>65</h3>
-                    <p>Unique Visitors</p>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-red">
+                    <div class="inner">
+                        <h3>65</h3>
+                        <p>Unique Visitors</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-pie-graph"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="icon">
-                    <i class="ion ion-pie-graph"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
+            <!-- ./col -->
         </div>
-        <!-- ./col -->
-    </div>
 
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Hover Data Table</h3>
+        @*<div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Hover Data Table</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example2" class="table table-striped table-bordered" cellspacing="0" width=" 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Languages</th>
+                                    <th>Skills</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
                 </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table id="example2" class="table table-striped table-bordered" cellspacing="0" width=" 100%;">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Languages</th>
-                                <th>Skills</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-                <!-- /.box-body -->
+                <!-- /.box -->
+                <!-- /.box -->
             </div>
-            <!-- /.box -->
-            <!-- /.box -->
-        </div>
-        <!-- /.col -->
-    </div>
+            <!-- /.col -->
+        </div>*@
     <!-- /.row -->
 
     <div class="row">
@@ -414,13 +415,12 @@
                             </h2>
                             <div class="ssi-tile-itemHolder">
                                 <div class="total">
-                                    <span class="fact">8</span>
+                                    <span class="fact"> @((Model.Request.info1 + Model.Request.info2)) </span>
                                     <span class="description">Total</span>
                                 </div>
                                 <div id="Requests" class="ssi-tile-item">
-                                    <span class="description">4 Pending </span>
-                                    <span class="description">3 In Review</span>
-                                    <span class="description">1 In Progress</span>
+                                    <span class="description">@Model.Request.info1  Pending </span>
+                                    <span class="description">@Model.Request.info2  In Progress</span>
                                 </div>
                             </div>
                         </div>
@@ -432,13 +432,13 @@
                             </h2>
                             <div class="ssi-tile-itemHolder">
                                 <div class="total">
-                                    <span class="fact">958</span>
+                                    <span class="fact">@((Model.Worklist.info1 + Model.Worklist.info2))</span>
                                     <span class="description">Total</span>
                                 </div>
                                 <div id="Worklists" class="ssi-tile-item">
-                                    <span class="description">945 Active</span>
-                                    <span class="description">13 Assigned to Me</span>
-                                    <!--<span class="description">#3# Expired</span>-->
+                                    <span class="description">@Model.Worklist.info1 Active</span>
+
+                                    <span class="description">@Model.Worklist.info2 Expired</span>
                                 </div>
                             </div>
                         </div>
@@ -451,13 +451,13 @@
                             </h2>
                             <div class="ssi-tile-itemHolder">
                                 <div class="total">
-                                    <span class="fact">56</span>
+                                    <span class="fact">@((Model.Assignment.info1 + Model.Assignment.info2))</span>
                                     <span class="description">Total</span>
                                 </div>
                                 <div class="ssi-tile-item" id="Assignments">
-                                    <span id="" class="description">50 In Progress</span>
-                                    <span class="description">1 Due</span>
-                                    <span class="description">5 Overdue</span>
+                                    <span id="" class="description">@Model.Assignment.info1 In Progress</span>
+
+                                    <span class="description"> @Model.Assignment.info2 Completed</span>
                                 </div>
                             </div>
                         </div>
@@ -465,6 +465,50 @@
 
                 </div>
             </div>
+
+        </div>
+        <div class="col-md-6">
+            <!-- DONUT CHART -->
+            <!-- DONUT CHART -->
+            <div class="box box-danger">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Request Chart</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <canvas id="pieChart" style="height:250px"></canvas>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+
+        <div class="col-md-6">
+            <!-- DONUT CHART -->
+            <!-- DONUT CHART -->
+            <div class="box box-danger">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Worklist Status Chart</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <canvas id="worklist-pieChart" style="height:250px"></canvas>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
         </div>
     </div>
     <!-- /.row -->
@@ -475,8 +519,20 @@
 
 @section Scripts {
 
+
+
     @Scripts.Render("~/Scripts/pages/dashboard.js")
-    <script>
+    <script type="text/javascript">
+        debugger;
+        var pendingRequest = "@Model.Request.info1";
+        var inProgressRequest = "@Model.Request.info2";
+        var worklistChartInfo = {
+            Pending: "@Model.WorklistChartInfo.Pending",
+            WIP: "@Model.WorklistChartInfo.WIP",
+            Cancelled: "@Model.WorklistChartInfo.Cancelled",
+            Completed: "@Model.WorklistChartInfo.Completed",
+        }
+
         /* $('#example2').DataTable({
              'paging': true,
              'lengthChange': false,
@@ -497,12 +553,169 @@
                 "datatype": "json"
             },
             "columns": [
-            { "data": "Name", "name": "Name", "autoWidth": true },
-            { "data": "Age", "name": "Age", "autoWidth": true },
-            { "data": "Languages", "name": "Languages", "autoWidth": true },
-            { "data": "Skills", "name": "Skills", "autoWidth": true },
+                { "data": "Name", "name": "Name", "autoWidth": true },
+                { "data": "Age", "name": "Age", "autoWidth": true },
+                { "data": "Languages", "name": "Languages", "autoWidth": true },
+                { "data": "Skills", "name": "Skills", "autoWidth": true },
             ],
             "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
         });
+
+        createWorklistChart();
+
+        //-------------
+        //- PIE CHART -
+        //-------------
+        // Get context with jQuery - using jQuery's .get() method.
+        var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+        var pieChart = new Chart(pieChartCanvas)
+        var PieData = [
+            {
+                value: pendingRequest,
+                color: '#f56954',
+                highlight: '#f56954',
+                label: 'Pending'
+            },
+            {
+                value: inProgressRequest,
+                color: '#00a65a',
+                highlight: '#00a65a',
+                label: 'In Progress'
+            },
+            /*{
+                value: 400,
+                color: '#f39c12',
+                highlight: '#f39c12',
+                label: 'FireFox'
+            },
+            {
+                value: 600,
+                color: '#00c0ef',
+                highlight: '#00c0ef',
+                label: 'Safari'
+            },
+            {
+                value: 300,
+                color: '#3c8dbc',
+                highlight: '#3c8dbc',
+                label: 'Opera'
+            },
+            {
+                value: 100,
+                color: '#d2d6de',
+                highlight: '#d2d6de',
+                label: 'Navigator'
+            }*/
+        ]
+        var pieOptions = {
+            //Boolean - Whether we should show a stroke on each segment
+            segmentShowStroke: true,
+            //String - The colour of each segment stroke
+            segmentStrokeColor: '#fff',
+            //Number - The width of each segment stroke
+            segmentStrokeWidth: 2,
+            //Number - The percentage of the chart that we cut out of the middle
+            percentageInnerCutout: 50, // This is 0 for Pie charts
+            //Number - Amount of animation steps
+            animationSteps: 100,
+            //String - Animation easing effect
+            animationEasing: 'easeOutBounce',
+            //Boolean - Whether we animate the rotation of the Doughnut
+            animateRotate: true,
+            //Boolean - Whether we animate scaling the Doughnut from the centre
+            animateScale: false,
+            //Boolean - whether to make the chart responsive to window resizing
+            responsive: true,
+            // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+            maintainAspectRatio: true,
+            //String - A legend template
+            legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
+        }
+        //Create pie or douhnut chart
+        // You can switch between pie and douhnut using the method below.
+        pieChart.Doughnut(PieData, pieOptions);
+
+
+        function createWorklistChart() {
+            var pieChartCanvas = $('#worklist-pieChart').get(0).getContext('2d')
+            var pieChart = new Chart(pieChartCanvas)
+            var PieData = [
+                {
+                    value: parseInt(worklistChartInfo.Pending,10),
+                    color: '#f56954',
+                    highlight: '#f56954',
+                    label: 'Pending'
+                },
+                {
+                    value: parseInt(worklistChartInfo.WIP, 10),
+                    color: '#00a65a',
+                    highlight: '#00a65a',
+                    label: 'WIP'
+                },
+                {
+                    value: parseInt(worklistChartInfo.Cancelled, 10),
+                    color: '#f39c12',
+                    highlight: '#f39c12',
+                    label: 'Cancelled'
+                },
+                {
+                    value: parseInt(worklistChartInfo.Completed, 10),
+                    color: '#00c0ef',
+                    highlight: '#00c0ef',
+                    label: 'Completed'
+                },
+                /*{
+                    value: 400,
+                    color: '#f39c12',
+                    highlight: '#f39c12',
+                    label: 'FireFox'
+                },
+                {
+                    value: 600,
+                    color: '#00c0ef',
+                    highlight: '#00c0ef',
+                    label: 'Safari'
+                },
+                {
+                    value: 300,
+                    color: '#3c8dbc',
+                    highlight: '#3c8dbc',
+                    label: 'Opera'
+                },
+                {
+                    value: 100,
+                    color: '#d2d6de',
+                    highlight: '#d2d6de',
+                    label: 'Navigator'
+                }*/
+            ]
+            var pieOptions = {
+                //Boolean - Whether we should show a stroke on each segment
+                segmentShowStroke: true,
+                //String - The colour of each segment stroke
+                segmentStrokeColor: '#fff',
+                //Number - The width of each segment stroke
+                segmentStrokeWidth: 2,
+                //Number - The percentage of the chart that we cut out of the middle
+                percentageInnerCutout: 50, // This is 0 for Pie charts
+                //Number - Amount of animation steps
+                animationSteps: 100,
+                //String - Animation easing effect
+                animationEasing: 'easeOutBounce',
+                //Boolean - Whether we animate the rotation of the Doughnut
+                animateRotate: true,
+                //Boolean - Whether we animate scaling the Doughnut from the centre
+                animateScale: false,
+                //Boolean - whether to make the chart responsive to window resizing
+                responsive: true,
+                // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+                maintainAspectRatio: true,
+                //String - A legend template
+                legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
+            }
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            pieChart.Doughnut(PieData, pieOptions);
+        }
     </script>
 }

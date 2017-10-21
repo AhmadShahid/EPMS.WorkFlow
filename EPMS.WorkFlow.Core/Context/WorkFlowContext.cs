@@ -8,6 +8,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EPMS.WorkFlow.Core.Migrations;
 
 namespace EPMS.WorkFlow.Core.Context
 {
@@ -16,7 +17,7 @@ namespace EPMS.WorkFlow.Core.Context
 
         public WorkFlowContext() : base("name=DefaultConnection")
         {
-           // Database.SetInitializer(new MigrateDatabaseToLatestVersion<WorkFlowContext, Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<WorkFlowContext, Configuration>());
         }
 
         public DbSet<MaintenanceRequest> MaintenanceRequests { get; set; }

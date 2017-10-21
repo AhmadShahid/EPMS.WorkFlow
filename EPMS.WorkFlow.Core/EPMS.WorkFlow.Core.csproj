@@ -94,10 +94,11 @@
     <Compile Include="Entities\MaintenanceWorklist.cs" />
     <Compile Include="Identity\IdentityConfig.cs" />
     <Compile Include="Identity\IdentityModels.cs" />
+    <Compile Include="IRepository\IExecStoreProcedure.cs" />
     <Compile Include="IRepository\IRepository.cs" />
-    <Compile Include="Migrations\201710201050236_Initial.cs" />
-    <Compile Include="Migrations\201710201050236_Initial.Designer.cs">
-      <DependentUpon>201710201050236_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201710201902110_EPMS_Workflow.cs" />
+    <Compile Include="Migrations\201710201902110_EPMS_Workflow.Designer.cs">
+      <DependentUpon>201710201902110_EPMS_Workflow.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,8 +108,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710201050236_Initial.resx">
-      <DependentUpon>201710201050236_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710201902110_EPMS_Workflow.resx">
+      <DependentUpon>201710201902110_EPMS_Workflow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

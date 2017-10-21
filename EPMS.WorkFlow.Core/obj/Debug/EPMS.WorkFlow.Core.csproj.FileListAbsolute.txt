@@ -27,3 +27,32 @@ C:\Users\s.ahmad\Documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFl
 C:\Users\s.ahmad\Documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Newtonsoft.Json.xml
 C:\Users\s.ahmad\Documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.Migrations.Initial.resources
 C:\Users\s.ahmad\Documents\visual studio 2015\Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EPMS.WorkFlow.Core.dll.config
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EPMS.WorkFlow.Core.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EPMS.WorkFlow.Core.pdb
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Owin.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.dll
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.pdb
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.Migrations.EPMS_Workflow.resources
+C:\Users\DELL\Desktop\Demo Projects\EPMS.WorkFlow\EPMS.WorkFlow.Core\obj\Debug\EPMS.WorkFlow.Core.csproj.GenerateResource.Cache

@@ -86,7 +86,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constant\EPMS_Constant.cs" />
+    <Compile Include="Dtos\TileInfo.cs" />
+    <Compile Include="Dtos\WorklistChartInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ExecStoreProcedure.cs" />
     <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>

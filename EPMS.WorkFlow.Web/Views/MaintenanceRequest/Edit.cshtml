@@ -1,7 +1,72 @@
-﻿
+﻿@model EPMS.WorkFlow.Web.ViewModels.MaintenanceRequest.MaintenanceRequestVM
+
 @{
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<section class="content">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">@ViewBag.Title</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    @using (Html.BeginForm("Edit", "MaintenanceRequest", FormMethod.Post, new { role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(x => x.Id);
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.CustomerName)
+                            @Html.TextBoxFor(m => m.CustomerName, new { @class = "form-control", @placeholder = "Customer Name" })
+                            @Html.ValidationMessageFor(m => m.CustomerName, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email)
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
 
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.ContactNo)
+                            @Html.TextBoxFor(m => m.ContactNo, new { @class = "form-control", @placeholder = "Contact Number" })
+                            @Html.ValidationMessageFor(m => m.ContactNo, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Adress)
+                            @Html.TextAreaFor(m => m.Adress, new { @class = "form-control", @placeholder = "Address" })
+                            @Html.ValidationMessageFor(m => m.Adress, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+
+                            @Html.LabelFor(m => m.RequestReason)
+                            @Html.TextAreaFor(m => m.RequestReason, new { @class = "form-control", @placeholder = "Request Reason" })
+                            @Html.ValidationMessageFor(m => m.RequestReason, "", new { @class = "text-danger" })
+                        </div>
+
+
+                        <!-- select -->
+                        <div class="form-group">
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.RequestBy)
+                            @Html.DropDownListFor(x => x.RequestBy, EnumHelper.GetSelectList(typeof(EPMS.WorkFlow.Infrastructure.Constant.RequestSource)), "Select Request Souce ", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.RequestBy, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="box-footer">
+                            <input type="submit" val="Submit" class="btn btn-primary">
+                            <a href="@Url.Action("Index","MaintenanceRequest")" class="btn btn-primary"> Cancel </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.box-body -->
